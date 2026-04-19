@@ -329,6 +329,7 @@ Deferred:
 ## Notes For Next Work
 
 - Project workflow for every future step: plan first, update this README with the planned/accepted change, then implement it in the app.
+- Token discipline workflow: before each future task, reference `TOKEN_DISCIPLINE.md` and keep file reads, tool outputs, patches, verification, and summaries compact.
 - Next accepted step: simplify the main webpage into one scan-friendly view, add an analysis workflow runner that executes the quote, news, SEC filing, sentiment, and final-summary stages as tracked work, and show a loading/progress indicator while the workflow is processing.
 - Implementation constraint for the next step: keep the code modular and avoid dumping backend or frontend logic into one large file. Backend work should be separated by routes, database access, workflow orchestration, providers, scoring, and utilities. Frontend work should be separated into API helpers, app state, and reusable view components.
 - Commit workflow: only commit after the user gives an explicit signal; inspect status/diffs first; do not blindly commit everything; group related changes into sensible commits before pushing.

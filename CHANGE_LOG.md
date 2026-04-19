@@ -16,6 +16,14 @@ Commit workflow:
 - Bundle related changes into sensible commits.
 - Push only after the grouped commits are created and verified.
 
+Token discipline workflow:
+
+- Reference `TOKEN_DISCIPLINE.md` before future work.
+- Use targeted file inspection.
+- Keep command output compact.
+- Avoid full JSON/log dumps.
+- Keep progress updates and final summaries concise unless exhaustive detail is requested.
+
 ## 1. Initial V1 Build
 
 ### Task In One Sentence
