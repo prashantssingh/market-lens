@@ -1,0 +1,6 @@
+.DS_Store
+data/
+backend/market-lens-api
+frontend/dist/
+frontend/node_modules/
+*.log

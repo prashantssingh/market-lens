@@ -1,0 +1,22 @@
+services:
+  api:
+    build:
+      context: ./backend
+    environment:
+      PORT: "8080"
+      DATA_DIR: /data
+      ALPHA_VANTAGE_API_KEY: ${ALPHA_VANTAGE_API_KEY:-}
+    volumes:
+      - ./data:/data
+    ports:
+      - "8080:8080"
+
+  web:
+    build:
+      context: ./frontend
+      args:
+        VITE_API_BASE: ""
+    depends_on:
+      - api
+    ports:
+      - "3000:80"
